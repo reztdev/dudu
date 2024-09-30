@@ -18,9 +18,21 @@ Dudu is an all-in-one solution for network troubleshooting, security auditing, a
 
 <h3>Usage Example:</h3>
 
-dudu --reverse-shell <target_ip> --port <target_port>
-dudu --ping <target_ip>
-dudu --scan-host <network_range>
-dudu --curl <url>
-dudu --scan-port <target_ip> --range <port_range>
+```
+dudu reverse -p <port>
+```
+```
+dudu ping --host <target_ip>
+```
+```
+dudu scan --target <network_range>
+```
+```
+dudu curl <url>
+```
+```
+dudu scanport -t <target_ip>
+```
+```
 dudu --vuln-check <target_ip>
+```
