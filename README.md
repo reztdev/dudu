@@ -16,7 +16,8 @@ Dudu is an all-in-one solution for network troubleshooting, security auditing, a
 - Easy to integrate into existing scripts or automated workflows
 - Highly customizable with optional arguments for tailored operations
 
-<h4>Requirement Module:</h4>
+<h3>Requirement Module:</h3>
+- Register account www.vulners.com for get API_KEY</br></br>
 - Scapy (Packet Manipulation)
 
 - Library requirement for Windows: https://npcap.com/dist/npcap-1.81.exe
