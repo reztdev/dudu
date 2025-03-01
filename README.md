@@ -19,6 +19,8 @@ Dudu is an all-in-one solution for network troubleshooting, security auditing, a
 <h4>Requirement Module:</h4>
 - Scapy (Packet Manipulation)
 
+- Library requirement for Windows: https://npcap.com/dist/npcap-1.81.exe
+
 ```
 pip install scapy
 ```
